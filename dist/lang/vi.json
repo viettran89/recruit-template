@@ -1,0 +1,11 @@
+{
+  "header": {
+    "welcome": "Chào mừng",
+    "home": "Trang chủ",
+    "about": "Về chúng tôi"
+  },
+  "auth": {
+    "login": "Đăng nhập",
+    "signup": "Đăng ký"
+  }
+}

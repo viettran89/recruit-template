@@ -1,0 +1,128 @@
+@charset "utf-8";
+@use "./../base/mixins" as *;
+
+.footer {
+  padding: 80px 0 0;
+  background-color: #F3F3F3;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    img {
+      width: 80px;
+    }
+    
+    p {
+      font-size: 24px;
+      white-space: nowrap;
+      font-weight: bold;
+      line-height: 1;
+    }
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .item-label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .footer-sub-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 8px;
+    li {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .footer-map {
+      width: 100%;
+    }
+
+    iframe {
+      width: 300px;
+      height: 220px;
+    }
+
+    a {
+      &::before {
+        content: "-";
+        margin-right: 4px;
+      }
+    }
+
+    span,
+    strong {
+      display: inline-block;
+      padding-top: 2px;
+    }
+
+    i {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 12px;
+      background-color: #000;
+    }
+  }
+
+  .footer-copyright {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid lightgray;
+    margin-top: 40px;
+  }
+
+  .copyright-text {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 8px;
+    li {
+      display: inline-flex;
+      padding: 0 8px;
+      cursor: pointer;
+    }
+    i {
+      font-size: 20px;
+      color: #000;
+      transition: all .2s ease;
+    }
+  }
+
+  .social-facebook:hover i {
+    color: rgba(25, 119, 242, 1);
+  }
+
+  .social-youtube:hover i {
+    color: #EE1B0D;
+  }
+
+  .social-linkedin:hover i {
+    color: #0073B1;
+  }
+}

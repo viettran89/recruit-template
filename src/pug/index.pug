@@ -1,0 +1,77 @@
+extends ./_layouts/default
+
+block vars
+  -path = ".."
+  -pageID = "top"
+  -pageTitle = "Raksul Việt Nam - Better Systems, Better World."
+  -pageDescription = "Raksul aims to change the world by reinventing legacy industry structures with the power of the Internet."
+  -pageKeywords = ""
+  -imgPC = path+"/img/top/"
+  -imgSP = path+"/img/top/sp/"
+  -imgCommonPC = path+"/img/common/"
+  -imgCommonSP = path+"/img/common/sp/"
+
+block container
+  section.section-top-keyvisual
+    .keyvisual-swiper
+      .js-keyvisual-swiper.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .swiper-item
+              video(autoplay muted)
+                source(src=path+"/videos/home.mp4" type="video/mp4")
+          .swiper-slide
+            .swiper-item.has-bg
+              img(src=path+"/img/common/keyvisual_img_01.jpg", alt="")
+              .item-detail
+                h2.detail-title Level up yourself
+                  br
+                  | with Raksul Vietnam
+                p.detail-text When becoming a Raksul member, you not 
+                  br
+                  | only work but develop yourself 
+                  br
+                  | comprehensively in both expertise and soft skills.
+                a.common-button(href="#") View opening jobs
+        .swiper-pagination
+
+  section.section-top-vision
+    .wrapper
+      h2.common-title.is-center VISION
+      .vision-inner
+        .vision-image
+          .image-wrapper
+            img(src="https://recruit-vn.raksul.com/wp-content/uploads/2022/02/20220126-Space-S-Raskul-20-scaled-e1645517229518-2048x1152.jpg", alt="VISION")
+        .vision-content
+          .vision-description
+            p At Raksul Vietnam, our vision is to revolutionize the way businesses operate by leveraging technology to make services smarter, more efficient, and accessible to all. 
+            p We strive to be at the forefront of innovation, transforming traditional printing and logistics solutions into modern, data-driven, and sustainable practices.
+          a.common-button.is-black(href="#") View more
+
+  section.section-top-about
+    h2.common-title.is-center ABOUT US
+    ul.about-list
+      li.about-item
+        a.item-culture(href='#/', title='https://recruit.raksul.com/wp-content/uploads/2022/12/culture_mv-scaled.jpg')
+          span.item-text
+            span CULTURE
+      li.about-item
+        a.item-offices(href='#', title='https://recruit.raksul.com/wp-content/uploads/2022/12/office_mv-scaled.jpg')
+          span.item-text
+            span OFFICES
+      li.about-item
+        a.item-benefits(href='#', title='https://recruit.raksul.com/wp-content/uploads/2022/12/benefits_mv-scaled.jpg')
+          span.item-text
+            span BENEFITS
+
+  section.section-top-services
+    .wrapper
+      h2.common-title.is-center SERVICES
+
+  section.section-top-career
+    .wrapper
+      h2.common-title.is-center CAREER
+
+  section.section-top-events
+    .wrapper
+      h2.common-title.is-center EVENTS

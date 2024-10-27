@@ -1,0 +1,11 @@
+{
+  "header": {
+    "welcome": "Welcome",
+    "home": "Home",
+    "about": "About Us"
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up"
+  }
+}

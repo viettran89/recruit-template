@@ -1,0 +1,367 @@
+html,
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption,
+table th,
+table td {
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+}
+
+q,
+blockquote {
+  quotes: none;
+}
+
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+  content: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body * {
+  max-height: 99999em;
+  word-break: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a img {
+  border: none;
+}
+
+input,
+label,
+select,
+button {
+  line-height: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  word-break: normal;
+  vertical-align: middle;
+  white-space: normal;
+  -webkit-appearance: none;
+}
+
+button {
+  color: inherit;
+}
+
+textarea {
+  overflow: auto;
+  line-height: 1.5;
+  white-space: pre-line;
+  resize: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+  html,
+  body {
+    width: 1600px;
+    margin: 0;
+  }
+  @page {
+    margin: 0;
+    size: 11in 14.028in;
+  }
+  @page :left {
+    margin: 0;
+  }
+  @page :right {
+    margin: 0;
+  }
+  @page :first {
+    margin-top: 0;
+  }
+}
+html {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+@media print, (min-width: 768px) {
+  html {
+    font-size: 625%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  html {
+    min-height: 100vh;
+    font-size: 23.2558139535vw;
+  }
+}
+
+body {
+  transition: opacity 0.3s ease;
+  background-color: #fff;
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.4285714286;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+@media print, (min-width: 768px) {
+  body {
+    font-size: 0.14rem;
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  body {
+    font-size: 0.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  body::-webkit-scrollbar {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.trans {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  text-decoration: none;
+}
+.trans:hover {
+  opacity: 0.8;
+}
+
+.is-load {
+  opacity: 0;
+}
+html.is-visible .is-load {
+  opacity: 1;
+}
+
+.image-common {
+  display: block;
+  width: 100%;
+}
+
+.object-common {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+}
+
+@media print, (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .container {
+    min-width: 3.2rem;
+  }
+}
+
+@media print, (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0.2rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .wrapper {
+    padding-right: 0.24rem;
+    padding-left: 0.24rem;
+  }
+}
+
+@media print, (min-width: 768px) {
+  .sm {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .md {
+    /* stylelint-disable-next-line declaration-no-important */
+    display: none !important;
+  }
+}
+
+@font-face {
+  font-family: "AkkuratLLSub";
+  src: url("../fonts/AkkuratLLSub-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AkkuratLLSub";
+  src: url("../fonts/AkkuratLLSub-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.ft-akkurat {
+  font-family: "AkkuratLLSub", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background: yellowgreen;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  margin: 20px 0 11px;
+}

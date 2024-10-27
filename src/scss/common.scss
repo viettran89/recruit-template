@@ -1,0 +1,20 @@
+@use "base/base" as *;
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background: yellowgreen;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  margin: 20px 0 11px;
+}

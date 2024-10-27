@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+$viewport-width: 1250px;
+$wrapper-width: 1320px;
+$md-break: 1024px;
+$sm-break: 767.98px;
+$xs-break: 374px;
+// $font-sans: "Noto Sans JP", sans-serif;
+$font-sans: "Noto Sans", sans-serif;
+$font-size-pc: .14rem;
+$font-size-sp: .2rem;
+$font-weight-pc: 300;
+$font-weight-sp: 300;
+$line-height: calc(20 / 14);
+
+$color-default: #000;
+$primary-color: #2ABFCA;
+$color-gradient: linear-gradient(to right, #00aaff, #7a00ff, #ff007a, #ffb300);
